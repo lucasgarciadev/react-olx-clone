@@ -2,7 +2,9 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 
-import { Template } from './components/MainComponent';
+import './App.css'
+
+import { Template } from './components/MainComponents';
 import Header from './components/partials/Header';
 import Footer from './components/partials/Footer';
 
