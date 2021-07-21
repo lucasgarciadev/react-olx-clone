@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { PageArea } from './styled';
-import useApi from '../../helpers/olxAPI';
+import useApi from '../../helpers/OlxAPI';
 import { doLogin } from '../../helpers/AuthHandler';
 
 
@@ -29,6 +29,8 @@ const Page = () => {
             doLogin(json.token, rememberPassword);
             window.location.href = '/';
         }
+
+        setDisabled(false);
     }
 
     return (

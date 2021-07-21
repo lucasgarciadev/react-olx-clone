@@ -47,7 +47,12 @@ export const HeaderArea = styled.div`
         li {
             margin: 0 20px;
 
-            a {
+            a, button {
+                border: 0;
+                background: none;
+                font-family: 'Oswald', 'sans-serif';
+                outline: none;
+                cursor: pointer;
                 color: #000;
                 font-size: 14px;
 
