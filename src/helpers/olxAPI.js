@@ -129,6 +129,12 @@ const OlxAPI = {
             fData
         );
         return json;
+    },
+    getProfileInfo: async () => {
+        const json = await apiFetchGet(
+            '/user/me'
+        )
+        return json;
     }
 
 }
