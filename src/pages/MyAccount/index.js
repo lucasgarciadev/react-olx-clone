@@ -66,12 +66,24 @@ const Page = () => {
                     </form>
                 </div>
                 
-                {adList.map((i, k) =>
+                {adList.length > 0 ?
+                    
+                    adList.map((i, k) =>
+                        <div className="ads" >
+                            <AdItem key={k} data={i} />
+                            <button>Editar</button>
+                        </div>
+                    ) 
+                :
+                    <h2>Você não possui anúncios ativos</h2>
+                }
+
+                {/* {adList.map((i, k) =>
                     <div className="ads" >
                         <AdItem key={k} data={i} />
                         <button>Editar</button>
                     </div>  
-                )}
+                )} */}
             </PageArea>
         </PageContainer>
             
